@@ -1,0 +1,187 @@
+{
+    "club_id": "cl_tWU",
+    "max_capacity":50,
+    "devices":[
+
+        {   
+        "device_id":"dht22",
+        "room":"main",
+        "type":"sensor",
+        "descriptor":"temperature",
+        "setting":{"model": "DHT22",
+            "pin": 2},
+        "isActive":1
+                        },
+        {
+            "device_id":"dht22",
+            "room":"main",
+        "type":"sensor",
+        "descriptor":"humidity",
+            "setting":{"model": "DHT22",
+            "pin": 2},
+        "isActive":1
+        },
+        {   
+        "device_id":"MQ-5",
+        "room":"main",
+        "type":"sensor",
+        "descriptor":"gas",
+        "setting":{ "pin": 21},
+        "isActive":1
+                        },
+{   
+        "device_id":"dht22",
+        "room":"bar",
+        "type":"sensor",
+        "descriptor":"temperature",
+        "setting":{"model": "DHT22",
+            "pin": 2},
+        "isActive":1
+                        },
+        {
+            "device_id":"dht22",
+            "room":"bar",
+        "type":"sensor",
+        "descriptor":"humidity",
+            "setting":{"model": "DHT22",
+            "pin": 2},
+        "isActive":1
+        },
+        {   
+        "device_id":"MQ-5",
+        "room":"bar",
+        "type":"sensor",
+        "descriptor":"gas",
+        "setting":{ "pin": 16},
+        "isActive":1
+                        },
+{   
+        "device_id":"dht22",
+        "room":"WC",
+        "type":"sensor",
+        "descriptor":"temperature",
+        "setting":{"model": "DHT22",
+            "pin": 2},
+        "isActive":1
+                        },
+        {
+            "device_id":"dht22",
+            "room":"WC",
+        "type":"sensor",
+        "descriptor":"humidity",
+            "setting":{"model": "DHT22",
+            "pin": 2},
+        "isActive":1
+        },
+        {   
+        "device_id":"MQ-5",
+        "room":"WC",
+        "type":"sensor",
+        "descriptor":"gas",
+        "setting":{ "pin": 20},
+        "isActive":1
+                        },
+        {   
+        "device_id":"cam1",
+        "room":"main",
+        "type":"sensor",
+        "descriptor":"photo",
+        "setting":{"url": "https://api.imgbb.com/1/upload?key=75082cfff34b6f08f0ec3eee19575c43"},
+        "isActive":1
+                        },
+    {   
+        "device_id":"cam2",
+        "room":"dehor",
+        "type":"sensor",
+        "descriptor":"photo",
+        "setting":{"url": "https://api.imgbb.com/1/upload?key=75082cfff34b6f08f0ec3eee19575c43"},
+        "isActive":1
+                        },
+    {   
+        "device_id":"cam3",
+        "room":"bar",
+        "type":"sensor",
+        "descriptor":"photo",
+        "setting":{"url": "https://api.imgbb.com/1/upload?key=75082cfff34b6f08f0ec3eee19575c43"},
+        "isActive":1
+                        },
+    {   
+        "device_id":"cam4",
+        "room":"WC",
+        "type":"sensor",
+        "descriptor":"photo",
+        "setting":{"url": "https://api.imgbb.com/1/upload?key=75082cfff34b6f08f0ec3eee19575c43"},
+        "isActive":1
+                        },
+        {   
+        "device_id":"pres",
+        "room":"main",
+        "type":"sensor",
+        "descriptor":"presence",
+        "setting":{},
+        "isActive":1
+                        },
+        {   
+        "device_id":"blt",
+        "room":"main",
+        "type":"sensor",
+        "descriptor":"CheckPart",
+        "setting":{},
+        "isActive":1
+                        },
+        {   
+        "device_id":"AIR",
+        "room":"main",
+        "type":"actuator",
+        "descriptor":"ventilator",
+        "setting":{"pin": 10},
+        "isActive":0
+                        },
+                {   
+        "device_id":"mic1",
+        "room":"dehor",
+        "type":"sensor",
+        "descriptor":"microphone",
+        "setting":{"pin": 9},
+        "isActive":1
+                        }
+        ],
+		
+	"thresholds":[
+		{
+		"room":"main",
+		"descriptor":"temperature",
+		"max_value":25,
+		"action":"ventilator"
+		},{
+		"room":"main",
+		"descriptor":"gas",
+		"max_value":0,
+		"action":"ventilator"
+		},
+		{
+		"room":"dehor",
+		"descriptor":"microphone",
+		"max_value":72,
+		"action":""
+		},
+		{
+		"room":"main",
+		"descriptor":"presence",
+		"max_value":50,
+		"action":""
+		},{
+		"room":"WC",
+		"descriptor":"gas",
+		"max_value":0,
+		"action":""
+		},{
+		"room":"bar",
+		"descriptor":"gas",
+		"max_value":0,
+		"action":""
+		}
+		
+		]
+    
+    }
